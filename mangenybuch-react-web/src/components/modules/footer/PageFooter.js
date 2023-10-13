@@ -14,10 +14,10 @@ function PageFooter() {
     <>
       <div className="text-black grid grid-cols-4">
         <div>
-          <h3 className="text-2xl mt-5 mb-2 text-[#800080]">
+          <h3 className="text-xl mt-5 mb-2 text-[#800080]">
             Customer Service
           </h3>
-          <div className="mt-4 text-white text-xl">
+          <div className="mt-4 text-white text-lg">
             <div className="flex flex-col">
               <LinkButton to="/">Contact Us</LinkButton>
               <LinkButton to="/">Frequently asked questions</LinkButton>
@@ -25,14 +25,14 @@ function PageFooter() {
             </div>
           </div>
           <div>
-            <p className="text-white pt-4 text-xl">
+            <p className="text-white pt-4 text-lg">
               {`© ${new Date().getFullYear()} Pauline Ondiek All rights reserved.`}
             </p>
           </div>
         </div>
         <div>
-          <h3 className="text-2xl mt-5 mb-2 text-[#800080]">Shop With Us</h3>
-          <div className="mt-4 text-white text-xl">
+          <h3 className="text-xl mt-5 mb-2 text-[#800080]">Shop With Us</h3>
+          <div className="mt-4 text-white text-lg">
             <div className="flex flex-col">
               <LinkButton to="/">Shipping and refunds</LinkButton>
               <LinkButton to="/">Privacy policy</LinkButton>
@@ -40,8 +40,8 @@ function PageFooter() {
           </div>
         </div>
         <div>
-          <h3 className="text-2xl mt-5 mb-2 text-[#800080]">About Us</h3>
-          <div className="mt-4 text-white text-xl">
+          <h3 className="text-xl mt-5 mb-2 text-[#800080]">About Us</h3>
+          <div className="mt-4 text-white text-lg">
             <div className="flex flex-col">
               <LinkButton to="/">Our story</LinkButton>
               <LinkButton to="/">Careers</LinkButton>
@@ -50,8 +50,8 @@ function PageFooter() {
           </div>
         </div>
         <div>
-          <h3 className="text-2xl mt-5 mb-2 text-[#800080]">Talk With Us</h3>
-          <h3 className="text-2xl mt-5 mb-2 text-white">
+          <h3 className="text-xl mt-5 mb-2 text-[#800080]">Talk With Us</h3>
+          <h3 className="text-lg mt-5 mb-2 text-white">
             Follow us on Social Media
           </h3>
           <div className="flex gap-x-4 mt-4">

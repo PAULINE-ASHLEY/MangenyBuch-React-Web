@@ -38,7 +38,7 @@ export const business6 = `${IMAGES_PATH}/business6.webp`;
 export const business7 = `${IMAGES_PATH}/business7.webp`;
 export const business8 = `${IMAGES_PATH}/business8.webp`;
 export const business9 = `${IMAGES_PATH}/business9.webp`;
-export const babylon = `${IMAGES_PATH}/babylon.webp`;
+export const babylon = `${IMAGES_PATH}/babylon.jpg`;
 export const business10 = `${IMAGES_PATH}/business10.webp`;
 
 //Classics Images

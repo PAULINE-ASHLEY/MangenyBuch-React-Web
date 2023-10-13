@@ -23,47 +23,47 @@ const NavBar = () => {
             </Link>
           </li>
           <li>
-            <Link to="/" className="px-3 inline-block">
+            <Link to="/Bestsellers" className="px-3 inline-block">
               BESTSELLER
             </Link>
           </li>
           <li>
-            <Link to="/" className="px-3 inline-block">
+            <Link to="/TopDeals" className="px-3 inline-block">
               TOPDEALS
             </Link>
           </li>
           <li>
-            <Link to="/" className="px-3 inline-block">
+            <Link to="/Business" className="px-3 inline-block">
               BUSINESS
             </Link>
           </li>
           <li>
-            <Link to="/" className="px-3 inline-block">
+            <Link to="/Novels" className="px-3 inline-block">
               NOVELS
             </Link>
           </li>
           <li>
-            <Link to="/" className="px-3 inline-block">
+            <Link to="/Kids" className="px-3 inline-block">
               CHILDREN
             </Link>
           </li>
           <li>
-            <Link to="/" className="px-3 inline-block">
+            <Link to="/Biography" className="px-3 inline-block">
               BIOGRAPHY
             </Link>
           </li>
           <li>
-            <Link to="/" className="px-3 inline-block">
+            <Link to="/SelfHelp" className="px-3 inline-block">
               SELF HELP
             </Link>
           </li>
           <li>
-            <Link to="/" className="px-3 inline-block">
+            <Link to="/Classic" className="px-3 inline-block">
               CLASSICS
             </Link>
           </li>
           <li>
-            <Link to="/" className="px-3 inline-block">
+            <Link to="/Comic" className="px-3 inline-block">
               COMICS
             </Link>
           </li>

@@ -2,9 +2,9 @@ import { React } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { addToCart } from 'features/cartSlice';
 
-const Book = () => {
+const Bestseller = () => {
   const currentPage = 1;
-  const postsPerPage = 10;
+  const postsPerPage = 12;
 
   // Get current posts
   const indexOfLastPost = currentPage * postsPerPage;
@@ -24,12 +24,9 @@ const Book = () => {
             <img src={item.image} alt={item.title} width={140} />
           </div>
           <div className="pt-2">
-            <h2 className="font-semibold text-black text-2xl text-center">
-              {item.title}
-            </h2>
-            <p className="pt-2 text-xl font-400 text-center">
-              Kshs. {item.price}
-            </p>
+            <h2 className="font-semibold text-black text-xl text-center">{item.title}</h2>
+            <p className="pt-2 text-xl font-400 text-center">{item.author}</p>
+            <p className="pt-2 text-xl font-400 text-center">Kshs. {item.price}</p>
             <div className="flex justify-center">
               <div>
                 <button
@@ -47,4 +44,4 @@ const Book = () => {
   );
 };
 
-export default Book;
+export default Bestseller;

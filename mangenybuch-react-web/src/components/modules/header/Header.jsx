@@ -28,27 +28,30 @@ const NavBar = () => {
             <div className="flex items-center font-medium justify-around py-4">
               <ul className="md:flex hidden items-center gap-4 text-lg">
                 <li>
-                  <Link to="/" className="px-3 inline-block">
+                  <Link to="/Contact" className="px-3 inline-block">
                     Contact
                   </Link>
                 </li>
                 <li>
-                  <Link to="/" className="px-3 inline-block">
+                  <Link to="/SignIn" className="px-3 inline-block">
                     Sign In
                   </Link>
                 </li>
                 <li>
-                  <Link to="/" className="px-3 inline-block">
+                  <Link to="/SignUp" className="px-3 inline-block">
                     Sign Up
                   </Link>
                 </li>
                 <li>
-                  <Link to="/" className="px-3 flex flex-row gap-x-2">
-                    Cart <div className='bg-black text-white px-4 rounded font-semibold text-lg'>{totalQuantity}</div>
+                  <Link to="/Cart" className="px-3 flex flex-row gap-x-2">
+                    Cart{' '}
+                    <div className="bg-black text-white px-4 rounded-xl font-bold text-lg">
+                      {totalQuantity}
+                    </div>
                   </Link>
                 </li>
                 <li>
-                  <Link to="/" className="px-3 inline-block">
+                  <Link to="/Checkout" className="px-3 inline-block">
                     Checkout
                   </Link>
                 </li>
