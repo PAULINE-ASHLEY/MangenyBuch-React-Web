@@ -1,0 +1,17 @@
+export { default as Home } from './Home';
+export { default as Bestsellers } from './Bestsellers';
+export { default as Business } from './Business';
+export { default as Cart } from './Cart';
+export { default as OnSale } from './OnSale';
+export { default as TopDeals } from './TopDeals';
+export { default as SignUp } from './SignUpPage';
+export { default as SignIn } from './SignInPage';
+export { default as Checkout } from './Checkout';
+export { default as Novels } from './Novels';
+export { default as Kids } from './Kids';
+export { default as Account } from './Account';
+export { default as Biography } from './Biography';
+export { default as SelfHelp } from './SelfHelp';
+export { default as Classic } from './Classic';
+export { default as Comic } from './Comic';
+export { default as Contact } from './Contact';

@@ -1,0 +1,99 @@
+import { useEffect } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+
+import { getCartTotal } from 'features/cartSlice';
+import { CheckoutForm } from '../Forms';
+import { Link } from 'react-router-dom';
+
+const Checkout = () => {
+  const { cart, totalPrice } = useSelector((state) => state.allCart);
+
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(getCartTotal());
+  }, [dispatch, cart]);
+
+  return (
+    <>
+      <div className="grid grid-cols-2 mt-2 px-4">
+        <div>
+          <h1 className="text-3xl font-semibold text-black py-8">
+            Billing Details
+          </h1>
+          <CheckoutForm />
+        </div>
+        <div></div>
+      </div>
+      <div className="mt-10">
+        <div className="px-4">
+          <h2 className="text-2xl bg-black text-white px-4 py-2 rounded-xl">
+            Your Order
+          </h2>
+          <div className="grid grid-cols-3 px-10">
+            <div>
+              <h2 className="text-2xl py-4 text-black">PRODUCT</h2>
+            </div>
+            <div>
+              <h2 className="text-2xl py-4 text-black">ITEM QUANTITY</h2>
+            </div>
+            <div>
+              <h2 className="text-2xl py-4 text-black">ITEM TOTAL</h2>
+            </div>
+          </div>
+          {cart?.map((data) => (
+            <>
+              <div className="grid grid-cols-3 items-center mt-2 px-10">
+                <div className="flex flex-row items-center gap-x-6">
+                  <img src={data.image} width={60} alt={data.image} />
+                  <p className="text-2xl font-semibold">{data.title}</p>
+                </div>
+                <div>
+                  {' '}
+                  <p className="text-2xl font-semibold" onChange={() => null}>
+                    {data.quantity} Item
+                  </p>
+                </div>
+                <div className="flex flex-row items-center gap-x-6">
+                  <p className="text-2xl font-semibold">Kshs. {data.price}</p>
+                  <p className="text-2xl font-semibold">
+                    x
+                  </p>
+                  <p className="text-2xl font-semibold" onChange={() => null}>
+                    {data.quantity}
+                  </p>
+                </div>
+              </div>
+            </>
+          ))}
+          <div className="grid grid-cols-3 items-center mt-2 px-10 pb-4">
+            <div></div>
+            <div></div>
+            <div className="flex flex-row gap-x-10 items-center py-4">
+              <p className="text-2xl text-black">TOTAL AMOUNT : </p>
+              <p className="text-2xl text-black font-semibold">
+                KSHS. {totalPrice}
+              </p>
+            </div>
+          </div>
+          <div className="grid grid-cols-3  items-center mt-2 px-10 pb-20">
+            <div></div>
+            <div></div>
+            <div className="flex flex-row gap-x-10 items-right py-4">
+              <div>
+                <button
+                  type="button"
+                  className="px-4 py-3 text-xl bg-black rounded-xl text-white mt-4 font-semibold"
+                >
+                  <Link to="/">PLACE ORDER</Link>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </>
+  );
+};
+
+export default Checkout;

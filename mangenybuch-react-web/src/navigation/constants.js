@@ -1,0 +1,17 @@
+export const HOME = '/';
+export const BESTSELLERS = '/Bestsellers';
+export const TOP_DEALS = '/TopDeals';
+export const ON_SALE = '/OnSale';
+export const BUSINESS = '/Business';
+export const NOVELS = '/Novels';
+export const KIDS = '/Kids';
+export const SIGN_IN = '/SignIn';
+export const SIGN_UP = '/SignUp';
+export const ACCOUNT = '/Account';
+export const BIOGRAPHY = '/Biography';
+export const SELF_HELP = '/SelfHelp';
+export const CLASSIC = '/Classic';
+export const COMIC = '/Comic';
+export const CONTACT = '/Contact';
+export const CART = '/Cart';
+export const CHECKOUT = '/Checkout';
