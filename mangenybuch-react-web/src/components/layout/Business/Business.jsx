@@ -2,8 +2,8 @@ import { React } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { addToCart } from 'features/cartSlice';
 
-const Bestseller = () => {
-  const currentPage = 3.5;
+const Business = () => {
+  const currentPage = 1;
   const postsPerPage = 12;
 
   // Get current posts
@@ -44,4 +44,4 @@ const Bestseller = () => {
   );
 };
 
-export default Bestseller;
+export default Business;
