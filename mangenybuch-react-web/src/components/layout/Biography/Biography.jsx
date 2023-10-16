@@ -1,6 +1,7 @@
 import { React } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { addToCart } from 'features/cartSlice';
+import { cart, heart } from 'assets/images';
 
 const Biography = () => {
   const currentPage = 4;
@@ -27,19 +28,25 @@ const Biography = () => {
             <h2 className="font-semibold text-black text-xl text-center">
               {item.title}
             </h2>
-            <p className="pt-2 text-xl font-400 text-center">{item.author}</p>
-            <p className="pt-2 text-xl font-400 text-center">
+            <p className="pt-2 text-xl font-semibold text-center text-gray-500">
+              {item.author}
+            </p>
+            <p className="pt-2 text-xl font-semibold text-center text-[#800080]">
               Kshs. {item.price}
             </p>
-            <div className="flex justify-center">
-              <div>
-                <button
-                  className="px-4 py-2 text-lg bg-black rounded-xl text-white mt-4 font-semibold"
-                  onClick={() => dispatch(addToCart(item))}
-                >
-                  ADD TO CART
-                </button>
-              </div>
+            <div className="flex flex-row justify-center gap-x-4">
+              <button
+                className="px-4 py-2 rounded-xl mt-4 font-semibold border-2 border-solid border-black"
+                onClick={() => dispatch(addToCart(item))}
+              >
+                <img src={heart} alt={heart} />
+              </button>
+              <button
+                className="px-4 py-2 rounded-xl mt-4 font-semibold border-2 border-solid border-black"
+                onClick={() => dispatch(addToCart(item))}
+              >
+                <img src={cart} alt={cart} />
+              </button>
             </div>
           </div>
         </div>

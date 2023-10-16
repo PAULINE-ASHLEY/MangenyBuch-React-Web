@@ -44,7 +44,7 @@ function PageFooter() {
           <div className="mt-4 text-white text-lg">
             <div className="flex flex-col">
               <LinkButton to="/">Our story</LinkButton>
-              <LinkButton to="/">Careers</LinkButton>
+              <LinkButton to="/">Checkout</LinkButton>
               <LinkButton to="/">Cart</LinkButton>
             </div>
           </div>

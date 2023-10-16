@@ -5,13 +5,11 @@ import { back, business } from 'assets/images';
 function SignUpView() {
   return (
     <div className="flex">
-      <div className="w-[50%] bg-black">
+      <div className="w-[50%] bg-[#800080]">
         <Link to="/">
           <div className="pt-8 px-6 flex gap-x-4 items-center">
             <img src={back} alt={back} width={40} />
-            <p className="text-white text-xl font-semibold text-center">
-              Back
-            </p>
+            <p className="text-white text-xl font-semibold text-center">Back</p>
           </div>
         </Link>
         <div className="flex justify-center items-center mt-20">
@@ -19,7 +17,7 @@ function SignUpView() {
         </div>
         <div className="pt-8 px-6 ">
           <p className="text-white text-4xl font-semibold text-center">
-            Ashley's Kitchen
+            MangenyBuch
           </p>
         </div>
       </div>

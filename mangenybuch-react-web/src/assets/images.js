@@ -10,8 +10,12 @@ export const location = `${IMAGES_PATH}/location.png`;
 export const paypal = `${IMAGES_PATH}/paypal.png`;
 export const cash = `${IMAGES_PATH}/cash.png`;
 export const mpesa = `${IMAGES_PATH}/mpesa.jpg`;
-export const shopping = `${IMAGES_PATH}/shopping.png`;
+export const cart = `${IMAGES_PATH}/cart.png`;
 export const account = `${IMAGES_PATH}/account.png`;
+export const heart = `${IMAGES_PATH}/heart.png`;
+export const book = `${IMAGES_PATH}/book.jpg`;
+export const home = `${IMAGES_PATH}/home.png`;
+export const trash = `${IMAGES_PATH}/trash.png`;
 
 //Biography Images
 export const biography = `${IMAGES_PATH}/biography.webp`;

@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 function SignInView() {
   return (
     <div className="flex h-screen">
-      <div className="w-[50%] bg-black">
+      <div className="w-[50%] bg-[#800080]">
         <Link to="/">
           <div className="pt-8 px-6 flex gap-x-4 items-center">
             <img src={back} alt="Real Estate Logo" width={40} />
@@ -17,7 +17,7 @@ function SignInView() {
         </div>
         <div className="pt-8 px-6 ">
           <p className="text-white text-4xl font-semibold text-center">
-            Ashley's Kitchen
+            MangenyBuch
           </p>
         </div>
       </div>

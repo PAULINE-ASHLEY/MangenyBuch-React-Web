@@ -29,7 +29,7 @@ const NavBar = () => {
           </li>
           <li>
             <Link to="/TopDeals" className="px-3 inline-block">
-              TOPDEALS
+              TOP DEALS
             </Link>
           </li>
           <li>

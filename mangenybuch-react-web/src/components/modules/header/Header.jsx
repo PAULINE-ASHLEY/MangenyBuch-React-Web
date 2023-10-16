@@ -28,8 +28,8 @@ const NavBar = () => {
             <div className="flex items-center font-medium justify-around py-4">
               <ul className="md:flex hidden items-center gap-4 text-lg">
                 <li>
-                  <Link to="/Contact" className="px-3 inline-block">
-                    Contact
+                  <Link to="/Account" className="px-3 inline-block">
+                    Account
                   </Link>
                 </li>
                 <li>

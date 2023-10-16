@@ -27,10 +27,10 @@ const Checkout = () => {
       </div>
       <div className="mt-10">
         <div className="px-4">
-          <h2 className="text-2xl bg-black text-white px-4 py-2 rounded-xl">
+          <h2 className="text-2xl bg-[#800080] text-white px-4 py-2">
             Your Order
           </h2>
-          <div className="grid grid-cols-3 px-10">
+          <div className="grid grid-cols-3 px-10 font-semibold">
             <div>
               <h2 className="text-2xl py-4 text-black">PRODUCT</h2>
             </div>
@@ -43,18 +43,21 @@ const Checkout = () => {
           </div>
           {cart?.map((data) => (
             <>
-              <div className="grid grid-cols-3 items-center mt-2 px-10">
+              <div className="grid grid-cols-3 items-center mt-2 px-10 mb-10">
                 <div className="flex flex-row items-center gap-x-6">
                   <img src={data.image} width={60} alt={data.image} />
+                  <div>
                   <p className="text-2xl font-semibold">{data.title}</p>
+                  <p className="text-xl font-semibold text-gray-500">by {data.author}</p>
+                  </div>
                 </div>
-                <div>
+                <div className='px-10'>
                   {' '}
-                  <p className="text-2xl font-semibold" onChange={() => null}>
+                  <p className="text-2xl font-semibold text-gray-500" onChange={() => null}>
                     {data.quantity} Item
                   </p>
                 </div>
-                <div className="flex flex-row items-center gap-x-6">
+                <div className="flex flex-row items-center gap-x-6 text-[#800080]">
                   <p className="text-2xl font-semibold">Kshs. {data.price}</p>
                   <p className="text-2xl font-semibold">
                     x
