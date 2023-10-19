@@ -26,7 +26,7 @@ const Cart = () => {
       <div className="flex mt-10">
         <div className="px-4 w-[70%]">
           <h2 className="text-2xl bg-[#800080] text-white px-4 py-2">
-            {cart.length} Books In Cart
+            {cart.length} Books In The Basket
           </h2>
           {cart?.map((data) => (
             <div className="grid grid-cols-4 items-center py-4 mt-6 px-10">
@@ -43,7 +43,7 @@ const Cart = () => {
               <div className="flex flex-row gap-x-6 items-center justify-center">
                 <button
                   type="button"
-                  className="px-4 py-2 text-xl bg-black rounded-xl text-white font-semibold"
+                  className="px-4 py-2 text-xl bg-black rounded-xl text-white font-semibold hover:bg-[#800080]"
                   onClick={() => dispatch(decreaseItemQuantity(data.id))}
                 >
                   -
@@ -56,7 +56,7 @@ const Cart = () => {
                 </div>
 
                 <button
-                  className="px-4 py-2 text-xl bg-black rounded-xl text-white font-semibold"
+                  className="px-4 py-2 text-xl bg-black rounded-xl text-white font-semibold hover:bg-[#800080]"
                   onClick={() => dispatch(increaseItemQuantity(data.id))}
                 >
                   +
@@ -72,7 +72,7 @@ const Cart = () => {
               <div className="items-center justify-center">
                 <button
                   type="button"
-                  className="px-4 py-2 text-xl bg-black rounded-xl text-white font-semibold"
+                  className="px-4 py-2 text-xl bg-black rounded-xl text-white font-semibold hover:bg-[#800080]"
                   onClick={() => dispatch(removeItem(data.id))}
                 >
                   <img src={trash} alt={trash} />
@@ -90,16 +90,16 @@ const Cart = () => {
             <div>
               <div className="flex flex-row gap-x-6 items-center py-4 mt-6">
                 <p className="text-2xl text-black font-semibold">
-                  TOTAL QUANTITY :{' '}
+                  Total Quantity :{' '}
                 </p>
                 <p className="text-2xl text-black font-bold">
-                  {totalQuantity} BOOKS
+                  {totalQuantity} Books
                 </p>
               </div>
 
               <div className="flex flex-row gap-x-6 items-center py-4">
                 <p className="text-2xl text-black font-semibold">
-                  TOTAL AMOUNT :{' '}
+                  Total Amount :{' '}
                 </p>
                 <p className="text-2xl text-black font-bold">
                   KSHS. {totalPrice}
@@ -109,9 +109,9 @@ const Cart = () => {
 
             <button
               type="button"
-              className="px-4 py-3 text-xl bg-black rounded-xl text-white mt-4 font-semibold"
+              className="px-4 py-3 text-xl bg-black rounded-xl text-white mt-4 font-semibold hover:bg-[#800080]"
             >
-              <Link to="/Checkout">PROCEED TO CHECKOUT</Link>
+              <Link to="/Checkout">Proceed To Checkout</Link>
             </button>
           </div>
         </div>

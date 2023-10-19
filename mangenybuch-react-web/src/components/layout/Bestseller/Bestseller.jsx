@@ -1,7 +1,7 @@
 import { React } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { addToCart } from 'features/cartSlice';
-import { cart, heart } from 'assets/images';
+// import { cart, heart } from 'assets/images';
 
 const Bestseller = () => {
   const currentPage = 3.5;
@@ -20,7 +20,10 @@ const Bestseller = () => {
   return (
     <>
       {currentPosts.map((item, id) => (
-        <div key={id} className="pt-8 text-justify">
+        <div
+          key={id}
+          className="pt-8 text-justify border-2 border-solid border-[#EEEEEE] m-6 p-4"
+        >
           <div className="flex justify-center">
             <img src={item.image} alt={item.title} width={140} />
           </div>
@@ -35,18 +38,12 @@ const Bestseller = () => {
               Kshs. {item.price}
             </p>
             <div className="flex flex-row justify-center gap-x-4">
-                <button
-                  className="px-4 py-2 rounded-xl mt-4 font-semibold border-2 border-solid border-black"
-                  onClick={() => dispatch(addToCart(item))}
-                >
-                  <img src={heart} alt={heart} />
-                </button>
-                <button
-                  className="px-4 py-2 rounded-xl mt-4 font-semibold border-2 border-solid border-black"
-                  onClick={() => dispatch(addToCart(item))}
-                >
-                  <img src={cart} alt={cart} />
-                </button>
+              <button
+                className="px-4 py-2 rounded-xl mt-4 font-semibold bg-black text-white hover:bg-[#800080]"
+                onClick={() => dispatch(addToCart(item))}
+              >
+                Add to basket
+              </button>
             </div>
           </div>
         </div>

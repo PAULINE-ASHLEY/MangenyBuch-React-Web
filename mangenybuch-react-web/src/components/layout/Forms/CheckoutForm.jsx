@@ -24,9 +24,9 @@ function CheckoutForm() {
       <div className="grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-1 xl:grid-cols-1 2xl:grid-cols-1">
         <div className="mb-4">
           <label htmlFor="fullName" className="text-black text-xl flex">
-            Full Name <b className="text-red text-xl">*</b>
+            Full Name <b className="text-red-600 text-xl">*</b>
             {formik.touched.fullName && formik.errors.fullName ? (
-              <div className="text-red text-xl ml-2">
+              <div className="text-red-600 text-xl ml-2">
                 {formik.errors.fullName}
               </div>
             ) : null}
@@ -44,9 +44,9 @@ function CheckoutForm() {
       <div className="grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-1 xl:grid-cols-1 2xl:grid-cols-1">
         <div className="mb-4">
           <label htmlFor="email" className="text-black text-xl flex">
-            Email Address <b className="text-red text-xl">*</b>
+            Email Address <b className="text-red-600 text-xl">*</b>
             {formik.touched.email && formik.errors.email ? (
-              <div className="text-red text-xl ml-2">{formik.errors.email}</div>
+              <div className="text-red-600 text-xl ml-2">{formik.errors.email}</div>
             ) : null}
           </label>
           <input
@@ -62,9 +62,9 @@ function CheckoutForm() {
       <div className="grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-1 xl:grid-cols-1 2xl:grid-cols-1">
         <div className="mb-4">
           <label htmlFor="phoneNumber" className="text-black text-xl flex">
-            Phone Number <b className="text-red text-xl">*</b>
+            Phone Number <b className="text-red-600 text-xl">*</b>
             {formik.touched.phoneNumbe && formik.errors.phoneNumbe ? (
-              <div className="text-red text-xl ml-2">
+              <div className="text-red-600 text-xl ml-2">
                 {formik.errors.phoneNumbe}
               </div>
             ) : null}
@@ -85,9 +85,9 @@ function CheckoutForm() {
       <div className="grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-1 xl:grid-cols-1 2xl:grid-cols-1">
         <div className="mb-4">
           <label htmlFor="located" className="text-black text-xl flex">
-            Where are you located? <b className="text-red text-xl">*</b>
+            Where are you located? <b className="text-red-600 text-xl">*</b>
             {formik.touched.located && formik.errors.located ? (
-              <div className="text-red text-xl ml-2">
+              <div className="text-red-600 text-xl ml-2">
                 {formik.errors.located}
               </div>
             ) : null}
@@ -107,7 +107,7 @@ function CheckoutForm() {
           <label htmlFor="located" className="text-black text-xl flex">
             Additional Information
             {formik.touched.located && formik.errors.located ? (
-              <div className="text-red text-xl ml-2">
+              <div className="text-red-600 text-xl ml-2">
                 {formik.errors.located}
               </div>
             ) : null}
@@ -125,9 +125,9 @@ function CheckoutForm() {
       <div className="grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-1 xl:grid-cols-1 2xl:grid-cols-1">
         <div className="mb-4">
           <label htmlFor="located" className="text-black text-xl flex">
-            Select a payment method <b className="text-red text-xl">*</b>
+            Select a payment method <b className="text-red-600 text-xl">*</b>
             {formik.touched.located && formik.errors.located ? (
-              <div className="text-red text-xl ml-2">
+              <div className="text-red-600 text-xl ml-2">
                 {formik.errors.located}
               </div>
             ) : null}
@@ -141,7 +141,7 @@ function CheckoutForm() {
               className="text-black text-xl items-center font-semibold"
             >
               {' '}
-              M-PESA
+              M-Pesa
             </label>
           </div>
           <br />
@@ -152,7 +152,7 @@ function CheckoutForm() {
               for="html"
               className="text-black text-xl items-center font-semibold"
             >
-              PAYPAL
+              Paypal
             </label>
           </div>
           <br />
@@ -164,7 +164,7 @@ function CheckoutForm() {
               className="text-black text-xl items-center font-semibold"
             >
               {' '}
-              CASH ON DELIVERY
+              Cash On Delivery
             </label>
           </div>
         </div>

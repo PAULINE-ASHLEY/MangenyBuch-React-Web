@@ -34,7 +34,7 @@ function SignInForm() {
 
       <div className="grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-1 xl:grid-cols-1 2xl:grid-cols-1 px-10">
 
-        <div className="border-black border-solid border-2 rounded-xl mb-4 bg-black">
+        <div className="border-black border-solid border-2 rounded-xl mb-4 bg-black hover:bg-[#800080]">
           <a
             href="www.facebook.com"
             rel="noreferrer"
@@ -45,7 +45,7 @@ function SignInForm() {
           </a>
         </div>
 
-        <div className="border-black border-solid border-2 rounded-xl mb-4 p-2 bg-black">
+        <div className="border-black border-solid border-2 rounded-xl mb-4 p-2 bg-black hover:bg-[#800080]">
           <a
             href="www.linkedin.com"
             rel="noreferrer"
@@ -68,9 +68,9 @@ function SignInForm() {
       <div className="grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-1 xl:grid-cols-1 2xl:grid-cols-1">
         <div className="px-10 mb-4">
           <label htmlFor="email" className="text-black text-xl flex">
-            Email Address <b className="text-red text-xl">*</b>
+            Email Address <b className="text-red-600 text-xl">*</b>
             {formik.touched.email && formik.errors.email ? (
-              <div className="text-red text-xl ml-2">{formik.errors.email}</div>
+              <div className="text-red-600 text-xl ml-2">{formik.errors.email}</div>
             ) : null}
           </label>
           <input
@@ -86,9 +86,9 @@ function SignInForm() {
       <div className="grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-1 xl:grid-cols-1 2xl:grid-cols-1">
         <div className="px-10 mb-4">
           <label htmlFor="password" className="text-black text-xl flex">
-            Password <b className="text-red text-xl">*</b>
+            Password <b className="text-red-600 text-xl">*</b>
             {formik.touched.password && formik.errors.password ? (
-              <div className="text-red text-xl ml-2">
+              <div className="text-red-600 text-xl ml-2">
                 {formik.errors.password}
               </div>
             ) : null}
@@ -108,7 +108,7 @@ function SignInForm() {
         <div className="flex justify-center">
           <button
             type="submit"
-            className="px-10 py-4 text-xl bg-black text-white rounded-xl"
+            className="px-10 py-4 text-xl bg-black text-white rounded-xl hover:bg-[#800080]"
           >
             Send
           </button>

@@ -32,13 +32,13 @@ const Checkout = () => {
           </h2>
           <div className="grid grid-cols-3 px-10 font-semibold">
             <div>
-              <h2 className="text-2xl py-4 text-black">PRODUCT</h2>
+              <h2 className="text-2xl py-4 text-black">Product</h2>
             </div>
             <div>
-              <h2 className="text-2xl py-4 text-black">ITEM QUANTITY</h2>
+              <h2 className="text-2xl py-4 text-black">Item Quantity</h2>
             </div>
             <div>
-              <h2 className="text-2xl py-4 text-black">ITEM TOTAL</h2>
+              <h2 className="text-2xl py-4 text-black">Item Total</h2>
             </div>
           </div>
           {cart?.map((data) => (
@@ -73,7 +73,7 @@ const Checkout = () => {
             <div></div>
             <div></div>
             <div className="flex flex-row gap-x-10 items-center py-4">
-              <p className="text-2xl text-black">TOTAL AMOUNT : </p>
+              <p className="text-2xl text-black">Total Amount : </p>
               <p className="text-2xl text-black font-semibold">
                 KSHS. {totalPrice}
               </p>
@@ -86,9 +86,9 @@ const Checkout = () => {
               <div>
                 <button
                   type="button"
-                  className="px-4 py-3 text-xl bg-black rounded-xl text-white mt-4 font-semibold"
+                  className="px-4 py-3 text-xl bg-black rounded-xl text-white mt-4 font-semibold hover:bg-[#800080]"
                 >
-                  <Link to="/">PLACE ORDER</Link>
+                  <Link to="/">Place Order</Link>
                 </button>
               </div>
             </div>
