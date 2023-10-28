@@ -14,19 +14,19 @@ const NavBar = () => {
 
   return (
     <>
-      <div className="grid grid-cols-3">
-        <div className="flex flex-row gap-x-4 items-center px-6 text-lg font-medium">
-          <p>Tel: +254708000000</p>
-          <p>Email: mangeny@gmail.com</p>
+      <div className="flex justify-center items-center">
+        <div className="w-[60%]">
+          <div className="flex flex-row gap-x-4 justify-center items-center px-4 text-sm font-medium">
+            <p>Tel: +254708000000</p>
+            <p>Email: mangeny@gmail.com</p>
+            <p>Monday-Friday : 9am-5pm</p>
+            <p>Saturday-Sunday : 9am-3pm</p>
+          </div>
         </div>
-        <div className="flex flex-row gap-x-4 items-center px-6 text-lg font-medium">
-          <p>Monday-Friday : 9am-5pm</p>
-          <p>Saturday-Sunday : 9am-3pm</p>
-        </div>
-        <div>
+        <div className="w-[40%]">
           <nav>
             <div className="flex items-center font-medium justify-around py-4">
-              <ul className="md:flex hidden items-center gap-4 text-lg">
+              <ul className="md:flex hidden items-center gap-2 text-sm">
                 <li>
                   <Link to="/Account" className="px-3 inline-block">
                     Account
@@ -45,7 +45,7 @@ const NavBar = () => {
                 <li>
                   <Link to="/Cart" className="px-3 flex flex-row gap-x-2">
                     Cart{' '}
-                    <div className="bg-black text-white px-4 rounded-xl font-bold text-lg">
+                    <div className="bg-black text-white px-4 rounded-xl font-bold text-sm">
                       {totalQuantity}
                     </div>
                   </Link>

@@ -12,44 +12,44 @@ function HomeView() {
       <div className="px-20 pt-10">
         <img src={book} alt={book} />
       </div>
-      <div className="px-20 font-medium pt-8 flex flex-row gap-x-6">
-        <h1 className="text-2xl">Bestseller</h1>
-        <h1 className="text-2xl">&gt;</h1>
-        <h1 className="text-2xl text-right text-gray-500">
+      <div className="px-20 font-medium pt-8 flex flex-row gap-x-2">
+        <h1 className="text-lg">Bestseller</h1>
+        <h1 className="text-lg">&gt;</h1>
+        <h1 className="text-lg text-right text-gray-500">
           <Link to="/Bestsellers">View All</Link>
         </h1>
       </div>
-      <div className="grid grid-cols-6 px-20">
+      <div className="grid grid-cols-5 px-10">
         <Bestseller />
       </div>
-      <div className="px-20 font-medium pt-4 flex flex-row gap-x-6">
-        <h1 className="text-2xl">Top Deals</h1>
-        <h1 className="text-2xl">&gt;</h1>
-        <h1 className="text-2xl text-right text-gray-500">
+      <div className="px-20 font-medium pt-4 flex flex-row gap-x-2">
+        <h1 className="text-lg">Top Deals</h1>
+        <h1 className="text-lg">&gt;</h1>
+        <h1 className="text-lg text-right text-gray-500">
           <Link to="/TopDeals">View All</Link>
         </h1>
       </div>
-      <div className="grid grid-cols-6 px-20">
+      <div className="grid grid-cols-5 px-10">
         <TopDeals />
       </div>
-      <div className="px-20 font-medium pt-4 flex flex-row gap-x-6">
-        <h1 className="text-2xl">On Sale</h1>
-        <h1 className="text-2xl">&gt;</h1>
-        <h1 className="text-2xl text-right text-gray-500">
+      <div className="px-20 font-medium pt-4 flex flex-row gap-x-2">
+        <h1 className="text-lg">On Sale</h1>
+        <h1 className="text-lg">&gt;</h1>
+        <h1 className="text-lg text-right text-gray-500">
           <Link to="/TopDeals">View All</Link>
         </h1>
       </div>
-      <div className="grid grid-cols-6 px-20">
+      <div className="grid grid-cols-5 px-10">
         <OnSale />
       </div>
-      <div className="px-20 font-medium pt-4 flex flex-row gap-x-6">
-        <h1 className="text-2xl">Comics Now Available</h1>
-        <h1 className="text-2xl">&gt;</h1>
-        <h1 className="text-2xl text-right text-gray-500">
+      <div className="px-20 font-medium pt-4 flex flex-row gap-x-2">
+        <h1 className="text-lg">Comics Now Available</h1>
+        <h1 className="text-lg">&gt;</h1>
+        <h1 className="text-lg text-right text-gray-500">
           <Link to="/Comic">View All</Link>
         </h1>
       </div>
-      <div className="grid grid-cols-6 px-20">
+      <div className="grid grid-cols-5 px-10">
         <Comics />
       </div>
     </PageWrapper>

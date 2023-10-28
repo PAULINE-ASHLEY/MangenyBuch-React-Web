@@ -8,7 +8,7 @@ const NavBar = () => {
     <nav>
       <div className="flex items-center font-medium justify-around py-4">
         <div>
-          <p className="text-4xl">
+          <p className="text-2xl">
             <b>Mangeny</b>
             <b className="text-[#800080]">Buch</b>
           </p>
@@ -16,7 +16,7 @@ const NavBar = () => {
             <ion-icon name={`${open ? 'close' : 'menu'}`}></ion-icon>
           </div>
         </div>
-        <ul className="md:flex hidden items-center gap-4 text-lg">
+        <ul className="md:flex hidden items-center gap-4 text-sm">
           <li>
             <Link to="/" className="px-3 inline-block">
               HOME

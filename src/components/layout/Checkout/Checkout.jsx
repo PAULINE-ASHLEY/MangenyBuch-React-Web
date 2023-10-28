@@ -18,7 +18,7 @@ const Checkout = () => {
     <>
       <div className="grid grid-cols-2 mt-2 px-4">
         <div>
-          <h1 className="text-3xl font-semibold text-black py-8">
+          <h1 className="text-xl font-semibold text-black py-8">
             Billing Details
           </h1>
           <CheckoutForm />
@@ -27,18 +27,18 @@ const Checkout = () => {
       </div>
       <div className="mt-10">
         <div className="px-4">
-          <h2 className="text-2xl bg-[#800080] text-white px-4 py-2">
+          <h2 className="text-base bg-[#800080] text-white px-4 py-2">
             Your Order
           </h2>
           <div className="grid grid-cols-3 px-10 font-semibold">
             <div>
-              <h2 className="text-2xl py-4 text-black">Product</h2>
+              <h2 className="text-base py-4 text-black">Product</h2>
             </div>
             <div>
-              <h2 className="text-2xl py-4 text-black">Item Quantity</h2>
+              <h2 className="text-base py-4 text-black">Item Quantity</h2>
             </div>
             <div>
-              <h2 className="text-2xl py-4 text-black">Item Total</h2>
+              <h2 className="text-base py-4 text-black">Item Total</h2>
             </div>
           </div>
           {cart?.map((data) => (
@@ -47,22 +47,22 @@ const Checkout = () => {
                 <div className="flex flex-row items-center gap-x-6">
                   <img src={data.image} width={60} alt={data.image} />
                   <div>
-                  <p className="text-2xl font-semibold">{data.title}</p>
-                  <p className="text-xl font-semibold text-gray-500">by {data.author}</p>
+                  <p className="text-base font-semibold">{data.title}</p>
+                  <p className="text-base font-semibold text-gray-500">by {data.author}</p>
                   </div>
                 </div>
                 <div className='px-10'>
                   {' '}
-                  <p className="text-2xl font-semibold text-gray-500" onChange={() => null}>
+                  <p className="text-base font-semibold text-gray-500" onChange={() => null}>
                     {data.quantity} Item
                   </p>
                 </div>
                 <div className="flex flex-row items-center gap-x-6 text-[#800080]">
-                  <p className="text-2xl font-semibold">Kshs. {data.price}</p>
-                  <p className="text-2xl font-semibold">
+                  <p className="text-base font-semibold">Kshs. {data.price}</p>
+                  <p className="text-base font-semibold">
                     x
                   </p>
-                  <p className="text-2xl font-semibold" onChange={() => null}>
+                  <p className="text-base font-semibold" onChange={() => null}>
                     {data.quantity}
                   </p>
                 </div>
@@ -73,8 +73,8 @@ const Checkout = () => {
             <div></div>
             <div></div>
             <div className="flex flex-row gap-x-10 items-center py-4">
-              <p className="text-2xl text-black">Total Amount : </p>
-              <p className="text-2xl text-black font-semibold">
+              <p className="text-base text-black">Total Amount : </p>
+              <p className="text-base text-black font-semibold">
                 KSHS. {totalPrice}
               </p>
             </div>
@@ -86,7 +86,7 @@ const Checkout = () => {
               <div>
                 <button
                   type="button"
-                  className="px-4 py-3 text-xl bg-black rounded-xl text-white mt-4 font-semibold hover:bg-[#800080]"
+                  className="px-4 py-3 text-sm bg-black rounded-xl text-white mt-4 font-semibold hover:bg-[#800080]"
                 >
                   <Link to="/">Place Order</Link>
                 </button>
