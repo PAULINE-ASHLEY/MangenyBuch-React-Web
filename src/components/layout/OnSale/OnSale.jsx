@@ -28,16 +28,16 @@ const OnSale = () => {
             <img src={item.image} alt={item.title} width={140} />
           </div>
           <div className="pt-2">
-            <h2 className="font-semibold text-black text-xl text-center">
+            <h2 className="font-semibold text-black text-base text-center">
               {item.title}
             </h2>
-            <p className="pt-2 text-xl font-400 text-center">{item.author}</p>
-            <p className="pt-2 text-xl font-400 text-center">
+            <p className="pt-2 text-base font-400 text-center">{item.author}</p>
+            <p className="pt-2 text-base font-400 text-center">
               Kshs. {item.price}
             </p>
             <div className="flex flex-row justify-center gap-x-4">
               <button
-                className="px-4 py-2 rounded-xl mt-4 font-semibold bg-black text-white hover:bg-[#800080]"
+                className="px-4 py-2 rounded-xl text-sm mt-4 font-semibold bg-black text-white hover:bg-[#800080]"
                 onClick={() => dispatch(addToCart(item))}
               >
                 Add to basket
