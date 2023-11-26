@@ -22,7 +22,7 @@ const SelfHelp = () => {
       {currentPosts.map((item, id) => (
         <div
           key={id}
-          className="pt-8 text-justify border-2 border-solid border-[#EEEEEE] m-6 p-4"
+          className="pt-8 text-justify border-2 border-solid border-[#EEEEEE] mx-2 mt-6 p-4"
         >
           <div className="flex justify-center">
             <img src={item.image} alt={item.title} width={140} />

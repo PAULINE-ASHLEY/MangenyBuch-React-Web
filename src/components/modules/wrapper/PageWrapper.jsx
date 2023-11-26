@@ -6,7 +6,7 @@ import { Header } from '../header';
 
 function PageWrapper({ children }) {
   return (
-    <div className="relative">
+    <div>
         <nav className="py-2 text-white bg-[#800080]">
         <div>
           <Header />
@@ -22,8 +22,8 @@ function PageWrapper({ children }) {
         <div className="min-h-[75vh] box-border w-full">{children}</div>
       </main>
 
-      <footer className="flex justify-center items-center mt-20 bg-black">
-        <div className="md:container py-8 px-4 lg:px-16 ">
+      <footer className="mt-20 bg-black">
+        <div className='py-8'>
           <PageFooter />
         </div>
       </footer>

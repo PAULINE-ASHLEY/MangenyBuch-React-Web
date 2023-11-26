@@ -5,7 +5,7 @@ import { facebook, instagram, linkedin, twitter, youtube } from 'assets/icons';
 function PageFooter() {
   return (
     <>
-      <div className="text-black grid grid-cols-4">
+      <div className="text-black grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 2xl:grid-cols-4 mx-10 md:mx-20">
         <div>
           <h3 className="text-lg mt-5 mb-2 text-[#800080]">Customer Service</h3>
           <div className="mt-4 text-white text-sm">

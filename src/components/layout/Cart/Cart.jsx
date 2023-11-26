@@ -23,13 +23,13 @@ const Cart = () => {
 
   return (
     <>
-      <div className="flex mt-10">
-        <div className="px-4 w-[70%]">
+      <div className="flex flex-col lg:flex-row xl:flex-row 2xl:flex-row mt-10 gap-y-6">
+        <div className="px-4 lg:w-[70%] xl:w-[70%] 2xl:w-[70%]">
           <h2 className="text-base bg-[#800080] text-white px-4 py-2">
             {cart.length} Books In The Basket
           </h2>
           {cart?.map((data) => (
-            <div className="grid grid-cols-4 items-center py-4 mt-6 px-10">
+            <div className="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-4 xl:grid-cols-4 2xl:grid-cols-4 items-center py-4 mt-6 px-10 gap-y-4">
               <div>
                 <img src={data.image} width={80} alt={data.image} />
                 <p className="text-base text-black font-semibold pt-4">
@@ -40,7 +40,7 @@ const Cart = () => {
                 </p>
               </div>
 
-              <div className="flex flex-row gap-x-6 items-center justify-center">
+              <div className="flex flex-row gap-x-6 items-center md:justify-center lg:justify-center xl:justify-center 2xl:justify-center">
                 <button
                   type="button"
                   className="px-4 py-2 text-sm bg-black rounded-xl text-white font-semibold hover:bg-[#800080]"
@@ -64,7 +64,7 @@ const Cart = () => {
               </div>
 
               <div>
-                <p className="text-center text-base font-bold text-[#800080] items-center justify-center">
+                <p className="md:text-center lg:text-center xl:text-center 2xl:text-center text-base font-bold text-[#800080] items-center justify-center">
                   Kshs. {data.price}
                 </p>
               </div>
@@ -82,7 +82,7 @@ const Cart = () => {
           ))}
         </div>
         {/* Summary Section */}
-        <div className="px-6 w-[30%]">
+        <div className="px-6 lg:w-[30%] xl:w-[30%] 2xl:w-[30%]">
           <div className="text-base bg-[#800080] text-white px-4 py-2">
             <h2>Summary Of The Books Bought</h2>
           </div>

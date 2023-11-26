@@ -16,7 +16,7 @@ const Checkout = () => {
 
   return (
     <>
-      <div className="grid grid-cols-2 mt-2 px-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 2xl:grid-cols-2 mt-2 px-4">
         <div>
           <h1 className="text-xl font-semibold text-black py-8">
             Billing Details
@@ -30,7 +30,7 @@ const Checkout = () => {
           <h2 className="text-base bg-[#800080] text-white px-4 py-2">
             Your Order
           </h2>
-          <div className="grid grid-cols-3 px-10 font-semibold">
+          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-3 px-10 font-semibold">
             <div>
               <h2 className="text-base py-4 text-black">Product</h2>
             </div>
@@ -43,15 +43,15 @@ const Checkout = () => {
           </div>
           {cart?.map((data) => (
             <>
-              <div className="grid grid-cols-3 items-center mt-2 px-10 mb-10">
-                <div className="flex flex-row items-center gap-x-6">
+              <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-3 items-center mt-2 px-10 mb-10 gap-y-4">
+                <div className="flex flex-col md:flex-row lg:flex-row xl:flex-row 2xl:flex-row md:items-center lg:items-center xl:items-center 2xl:items-center gap-x-6">
                   <img src={data.image} width={60} alt={data.image} />
                   <div>
                   <p className="text-base font-semibold">{data.title}</p>
                   <p className="text-base font-semibold text-gray-500">by {data.author}</p>
                   </div>
                 </div>
-                <div className='px-10'>
+                <div className='md:px-10 lg:px-10 xl:px-10 2xl:px-10'>
                   {' '}
                   <p className="text-base font-semibold text-gray-500" onChange={() => null}>
                     {data.quantity} Item
@@ -69,7 +69,7 @@ const Checkout = () => {
               </div>
             </>
           ))}
-          <div className="grid grid-cols-3 items-center mt-2 px-10 pb-4">
+          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-3 items-center mt-2 px-10 pb-4">
             <div></div>
             <div></div>
             <div className="flex flex-row gap-x-10 items-center py-4">
@@ -79,7 +79,7 @@ const Checkout = () => {
               </p>
             </div>
           </div>
-          <div className="grid grid-cols-3  items-center mt-2 px-10 pb-20">
+          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-3 items-center mt-2 px-10 pb-20">
             <div></div>
             <div></div>
             <div className="flex flex-row gap-x-10 items-right py-4">
