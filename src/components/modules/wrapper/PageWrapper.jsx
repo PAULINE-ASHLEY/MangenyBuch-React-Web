@@ -7,7 +7,7 @@ import { Header } from '../header';
 function PageWrapper({ children }) {
   return (
     <div>
-        <nav className="py-2 text-white bg-[#800080]">
+        <nav className="py-2 text-white bg-[#800080] z-50">
         <div>
           <Header />
         </div>

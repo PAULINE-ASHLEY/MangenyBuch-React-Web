@@ -16,6 +16,7 @@ export const heart = `${IMAGES_PATH}/heart.png`;
 export const book = `${IMAGES_PATH}/book.jpg`;
 export const home = `${IMAGES_PATH}/home.png`;
 export const trash = `${IMAGES_PATH}/trash.png`;
+export const menu = `${IMAGES_PATH}/menu.png`;
 
 //Biography Images
 export const biography = `${IMAGES_PATH}/biography.webp`;
